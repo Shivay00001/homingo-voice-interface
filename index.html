@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voice Receptionist — Homingo Hack Days (C2: Voice is the interface)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <h1>🎙 Voice Receptionist</h1>
+    <p class="sub">Homingo Hack Days · Track C2 — “Voice is the interface” · Agents track</p>
+    <p class="biz"><strong id="bizName"></strong><br>
+      <span id="bizHours"></span><br>
+      <span id="bizPhone"></span>
+    </p>
+  </header>
+
+  <section class="voice">
+    <button id="micBtn" class="mic">🎙 Tap mic &amp; speak</button>
+    <label class="speak"><input type="checkbox" id="speakToggle" checked> Speak replies aloud</label>
+    <p id="status" class="status">Ready — tap the mic or type below</p>
+  </section>
+
+  <section id="log" class="log" aria-live="polite"></section>
+
+  <section class="chips-wrap">
+    <p class="hint">Try one:</p>
+    <div id="chips" class="chips"></div>
+  </section>
+
+  <section class="composer">
+    <input id="textInput" type="text" placeholder="Or type here — e.g. “Book me Saturday morning”" autocomplete="off">
+    <button id="sendBtn">Send</button>
+    <button id="downloadLog" class="ghost" title="Download the JSON run log (every turn, like VQ Agent Core runs/*.jsonl)">⬇ Run log</button>
+  </section>
+
+  <footer>
+    <p>Voice-first: speak, the agent answers, books, triages and hands off to a human.
+    Built on the VQ Agent Core receptionist brain — rule-based, zero keys, zero cost,
+    works offline in Chrome/Edge (voice) and any browser (text). Prices and slots come
+    only from <code>config.js</code> — the agent never invents them.</p>
+  </footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
