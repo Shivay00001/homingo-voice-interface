@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #0d1b3e; color: #eef2ff; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { margin: 0 0 4px; font-size: 28px; }
+.sub { margin: 0 0 12px; color: #9db4ff; font-size: 14px; }
+.biz { background: #16265a; border: 1px solid #2b5ce6; border-radius: 10px; padding: 12px 14px; font-size: 14px; line-height: 1.5; }
+.voice { text-align: center; margin: 20px 0 8px; }
+.mic { font-size: 18px; padding: 16px 28px; border-radius: 999px; border: none; cursor: pointer; background: #2b5ce6; color: #fff; }
+.mic:hover { background: #1e46b8; }
+.mic.listening { background: #d92d20; animation: pulse 1.2s infinite; }
+@keyframes pulse { 50% { opacity: .7; } }
+.mic:disabled { background: #555; cursor: not-allowed; }
+.speak { display: block; margin-top: 10px; font-size: 14px; color: #c6d2ff; }
+.status { font-size: 13px; color: #9db4ff; min-height: 18px; }
+.log { background: #101c44; border: 1px solid #24356e; border-radius: 10px; padding: 12px; min-height: 220px; max-height: 380px; overflow-y: auto; }
+.msg { margin: 8px 0; padding: 8px 10px; border-radius: 8px; line-height: 1.5; font-size: 15px; }
+.msg.you { background: #1d3a8f; text-align: right; }
+.msg.agent { background: #1a2547; }
+.chips-wrap { margin-top: 14px; }
+.hint { margin: 0 0 6px; font-size: 13px; color: #9db4ff; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: #16265a; color: #dbe4ff; border: 1px solid #2b5ce6; border-radius: 999px; padding: 7px 12px; cursor: pointer; font-size: 13px; }
+.chip:hover { background: #1e46b8; }
+.composer { display: flex; gap: 8px; margin-top: 14px; }
+.composer input { flex: 1; padding: 11px 12px; border-radius: 8px; border: 1px solid #2b5ce6; background: #101c44; color: #fff; font-size: 15px; }
+.composer button { padding: 11px 16px; border-radius: 8px; border: none; background: #2b5ce6; color: #fff; cursor: pointer; font-size: 15px; }
+.composer button.ghost { background: transparent; border: 1px solid #2b5ce6; }
+footer { margin-top: 20px; font-size: 13px; color: #9db4ff; line-height: 1.6; }
+code { color: #c6d2ff; }
